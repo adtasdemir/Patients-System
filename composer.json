@@ -5,7 +5,7 @@
     "keywords": ["laravel", "framework"],
     "license": "MIT",
     "require": {
-        "php": ">=8.0.0",
+        "php": "^8.0",
         "guzzlehttp/guzzle": "^7.2",
         "laravel/framework": "^10.10",
         "laravel/sanctum": "^3.3",
@@ -13,11 +13,11 @@
     },
     "require-dev": {
         "fakerphp/faker": "^1.9.1",
-        "laravel/pint": "^1.0",
+        "laravel/pint": "^1.0@dev", // Adjusted for PHP 8.0 compatibility
         "laravel/sail": "^1.18",
         "mockery/mockery": "^1.4.4",
-        "nunomaduro/collision": "^7.0",
-        "phpunit/phpunit": "^10.1",
+        "nunomaduro/collision": "^5.0|^6.0|^7.0", // Adjusted for PHP 8.0 compatibility
+        "phpunit/phpunit": "^9.5|^10.0", // Adjusted for PHP 8.0 compatibility
         "spatie/laravel-ignition": "^2.0"
     },
     "autoload": {
